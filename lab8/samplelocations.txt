@@ -1,0 +1,41 @@
+{
+	"name": "HyVee",
+	"category": "Supermarket",
+	"location": [-91.978462, 41.004849]
+}
+
+{
+	"name": "MUM",
+	"category": "University",
+	"location": [-91.9665342, 41.017654]
+}
+
+{
+	"name": "Bobs Barn",
+	"category": "Supermarket",
+	"location": [-91.981412, 41.006574]
+}
+
+{
+	"name": "Pizza Ranch",
+	"category": "Restaurant",
+	"location": [-91.977217, 41.007345]
+}
+
+{
+	"name": "Sweet n Saucy",
+	"category": "Restaurant",
+	"location": [-91.962301, 41.009223]
+}
+
+{
+	"name": "Addis Ethiopian Cuisine",
+	"category": "Restaurant",
+	"location": [-91.964146, 41.010227]
+}
+
+{
+	"name": "Everybodys Whole Foods",
+	"category": "Supermarket",
+	"location": [-91.96466, 41.013238]
+}
