@@ -13,7 +13,6 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit {
   title = 'UserDetails';
-  users: string[] = [];
   constructor(private dataService: DataService) {}
 
   ngOnInit() {

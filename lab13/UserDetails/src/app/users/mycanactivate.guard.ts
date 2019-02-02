@@ -11,20 +11,16 @@ export class MyCanActivateGuard implements CanActivate {
   uuid;
 
   constructor(private dataService: DataService, private router: Router) {
-    this.users = this.dataService.getCachedData();
+    // this.users = this.dataService.getCachedData();
   }
 
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-      console.log(route.params.uuid);
-      console.log(state);
-      this.uuid = this.users.find(data => data['login'].uuid === route.params.uuid);
-      if (this.uuid) {
+      if (this.dataService.isExist(route.params.uuid)) {
         return true;
-      } else {
-        console.log('INVALID UUID');
-        // this.router.navigate(['/users/error']);
       }
+      // console.log('trying to display error page');
+      return this.router.navigate(['error']);
   }
 }

@@ -14,11 +14,11 @@ import { DataService } from '../data.service';
   styles: []
 })
 export class UsersComponent implements OnInit {
+  id = 'd237b0f6-fb88-49bc-a346';
   users: object[] = [];
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.users = this.dataService.getCachedData();
-    console.log(this.users.length);
   }
 }

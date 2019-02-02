@@ -15,4 +15,9 @@ export class DataService {
   getCachedData() {
     return (JSON.parse(localStorage.getItem('users'))).results;
   }
+
+  isExist(uuid): boolean {
+    const user = this.getCachedData().find(users => users.login.uuid === uuid);
+    return user ? true : false;
+  }
 }

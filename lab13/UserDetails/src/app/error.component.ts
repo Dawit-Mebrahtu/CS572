@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-error',
   template: `
     <p>
-      error works!
+      User does not exist.
     </p>
   `,
   styles: []

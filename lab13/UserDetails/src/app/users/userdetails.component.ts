@@ -18,9 +18,9 @@ export class UserdetailsComponent implements OnDestroy {
   users: object[] = [];
   user;
 
-  constructor(private activatedRoute: ActivatedRoute, private dataService: DataService) {
+  constructor(private route: ActivatedRoute, private dataService: DataService) {
     this.users = this.dataService.getCachedData();
-    this.subscription = activatedRoute.params.subscribe(
+    this.subscription = route.params.subscribe(
       (param: any) => {
         this.uuid = param['uuid'];
         // this.user = this.users.filter(data => data['login'].uuid === this.uuid);
